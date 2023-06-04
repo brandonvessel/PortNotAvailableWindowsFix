@@ -9,7 +9,9 @@ Typical error message:
 ## Fix:
 
 net stop winnat
+  
 netsh int ipv4 add excludedportrange protocol=tcp startport=<PORTNUMBER> numberofports=1
+  
 net start winnat
 
 ## Result:
